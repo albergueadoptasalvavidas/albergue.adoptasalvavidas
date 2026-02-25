@@ -6,7 +6,7 @@
 <title>Adopta Salva Vidas</title>
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="Logo_blanco.png">
+<link rel="icon" type="image/png" href="Logo_pequeño.png">
 
 <!-- Fuente Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -264,6 +264,13 @@ nav a:hover {
     opacity: 0.7;
 }
 
+/* ICONOS REDES */
+.social-link img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
 /* Línea inferior */
 .footer-bottom {
     margin-top: 40px;
@@ -380,10 +387,6 @@ nav a:hover {
         gap: 40px;
     }
 
-    .timeline-item img {
-        height: 300px;
-    }
-
     /* STATS VERTICAL */
     .stats {
         flex-direction: column;
@@ -493,8 +496,7 @@ nav a:hover {
     
     <div class="footer-top">
         <div class="footer-brand">
-            <img src="Logo_blanco.png" alt="Logo">
-            <h2>Albergue Adopta Salva Vidas</h2>
+            <img src="Logo_pequeño.png" alt="Logo">
         </div>
 
         <div class="footer-contact">
@@ -552,6 +554,15 @@ window.onscroll = function() {
 
 topBtn.addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", function() {
+    menu.classList.toggle("active");
 });
 </script>
     
