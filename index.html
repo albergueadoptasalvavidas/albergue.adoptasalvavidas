@@ -211,6 +211,56 @@ nav a:hover {
     color: #7c2237;
     margin-top: 10px;
 }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero img {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia, .realidad {
+        padding: 60px 20px;
+    }
+}
+    
 </style>
 </head>
 
